@@ -16,9 +16,9 @@ inp_img_link = st.text_input("Enter Image Link")
 button_sub = st.button("Submit")
 try:
     if button_sub:
-    st.image(inp_img_link, caption="Uploaded Image")
+        st.image(inp_img_link, caption="Uploaded Image")
 # output = query("https://st.depositphotos.com/1718692/3527/i/450/depositphotos_35272435-stock-photo-forest-on-a-steep-mountain.jpg")
-    output = query(inp_img_link)
-    st.write(output[0]['generated_text'])
+        output = query(inp_img_link)
+        st.write(output[0]['generated_text'])
 except:
-    st.write("Enter Valid Image Link")
+        st.write("Enter Valid Image Link")
